@@ -1,0 +1,227 @@
+/* Body */
+* {
+  font-family: helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+/* Header */
+
+/* Navigatie */
+
+/* Navigatie menubalk */
+header nav {
+  display: flex;
+  list-style: none;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+header nav a {
+    padding-right: 3em;
+    width: 1em;
+}
+
+header nav a img {
+  margin-top: 2em;
+  height: 2em;
+  margin-right: auto;
+  padding-left: 0;
+  padding-top: 0;
+}
+
+header nav a:last-child {
+  padding-right: 0;
+}
+
+header nav a:first-child {
+  margin-right: auto;
+}
+
+/* Zoekbalk */
+header div input {
+  padding-left: 2em;
+}
+
+header input[type="text"] {
+  width: 100%;
+}
+
+/* Categorien in filters */
+header div ul {
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  color: #8e1f81;
+  list-style: none;
+  font-size: 1em;
+  padding-left: 0;
+}
+
+/* Filter button uitklappen micro interactie */
+header > div {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+.block {
+  display: block;
+}
+
+/* Buttons */
+
+button {
+  color: white;
+  font-size: 1em;
+  border: none;
+  text-transform: uppercase;
+}
+
+button img{
+  width: 2em;
+}
+
+/* Buttons in header */
+header > button {
+  background: #8e1f81;
+  width: 80%;
+  padding: .5em;
+  border-radius: .2em;
+  margin-top: 0;
+  margin-left: 10%
+}
+
+header form button {
+  color: white;
+  text-transform: uppercase;
+}
+
+header form button img {
+  width: 2.5em;
+  height: 2em;
+  }
+
+/* Styling button filteren */
+header div form button {
+  background-color: #8e1f81;
+  padding: 1em 2em;
+  font-size: .8em;
+  margin: 5% 5% 5% 70%;
+}
+
+
+/* Form */
+header form {
+  padding: 1em;
+  margin: 0;
+  font-size: 1.25em;
+}
+
+header form div {
+  display: flex;
+}
+
+header div {
+  background-color: #FAFAFA;
+  width: 80%;
+  margin: 5% 10%;
+}
+
+
+/* main form input[type="text"] {
+  width: 80%;
+  padding: 3em;
+  display: block;
+  border-radius: .2em;
+} */
+
+/* Main */
+
+main H1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #8e1f81;
+  font-size: 1.5em;
+  margin: 7% 10% 1% 10%;
+}
+
+/* Verhaal pagina */
+
+main section footer {
+  background: none;
+  width: 40%;
+  font-size: 1em;
+  margin: 1% 10%;
+}
+
+main section footer div {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+main section footer div img {
+  width: 2em;
+  height: 2em;
+}
+
+main section footer p {
+  display: inline-block;
+  font-size: 1em;
+}
+
+main section button {
+  background: none;
+  position: absolute;
+  width: 20%;
+  right: 0;
+}
+
+/* Button review plaatsen */
+.scroll {
+  background-color: #edce5a;
+  color: #8e1f81;
+  width: 40%;
+  height: 3em;
+  border-radius: .2em;
+  margin: 1% 10% 3% ;
+}
+
+/* Footer */
+footer {
+  background-color: #F4EEE8;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer img {
+  width: 1.5em;
+  height: 1.5em;
+  margin: 1em 10%;
+
+ }
+
+ /* @media(max-width:60em){
+    .verhaal {
+        background-image: url(IMG/RegionaalDagbladMobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+@media (max-width:30em) {
+    .verhaalpagina {
+        background-image: url(IMG/RegionaalDagbladDesktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:180em;
+    }
+} */

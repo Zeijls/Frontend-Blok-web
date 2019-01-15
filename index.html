@@ -1,115 +1,409 @@
 <html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-  <title>WEB Simone van Zeijl</title>
+    <title>WEB Simone van Zeijl</title>
 
-</head>
+  </head>
 
-<body>
+  <body>
 
-<header>
-  <nav>
-    <a href="index.html"><img src="IMG/wowairlogo.png" alt="Logo-WoW-Verhalen"></a>
-    <a href="verhalenvdweek.html"><img src="IMG/book.svg" alt="VerhalenvdWeek"></a>
-    <a href="downloads.html"><img src="IMG/download.svg" alt="Downloads"></a>
-    <a href="favorieten.html"><img src="IMG/like.svg" alt="Favorieten"></a>
-    <a href="profile.html"><img src="IMG/user.svg" alt="Profiel"></a>
-  </nav>
+    <header>
+      <nav>
+        <a href="index.html"><img src="IMG/wowairlogo.png" alt="Logo-WoW-Verhalen"></a>
+        <a href="verhalenvdweek.html"><img src="IMG/book.svg" alt="VerhalenvdWeek"></a>
+        <a href="downloads.html"><img src="IMG/download.svg" alt="Downloads"></a>
+        <a href="profile.html"><img src="IMG/profile.svg" alt="Profiel"></a>
+      </nav>
 
-    <form>
-        <fieldset>
-          <legend> Zoek 99 verhalen </legend>
-          <div>
-            <input type="text">
-            <button> <img src="IMG/Zoekbutton.png"> </button>
-          </div>
-        </fieldset>
-    </form>
+      <form>
+        <div>
+          <input type="text" placeholder="Zoek 99 verhalen">
+          <button> <img src="IMG/Zoekbutton.png"> </button>
+        </div>
+      </form>
 
-    <button><img src="IMG/filter.svg">Filters toepassen</button>
+      <button><img src="IMG/filter.svg">Filters toepassen</button>
 
-    <div>
-      <ul>
+      <div>
+        <ul>
           <li><a>Gevoel (44)</a></li>
           <li><a>Zweverig (18)</a></li>
           <li><a>Old School (20)</a></li>
           <li><a>Bondig (13)</a></li>
-      </ul>
+        </ul>
 
-      <form>
-    			<H2> Leesduur </H2>
-    			  <input type="checkbox" name="time" value="1 minuut" checked> 1 minuut<br>
-      			<input type="checkbox" name="time" value="2 minuten"> 2 minuten<br>
-      			<input type="checkbox" name="time" value="3 minuten"> 3 minuten<br>
-      			<input type="checkbox" name="time" value="4 minuten"> 4 minuten<br>
-      			<input type="checkbox" name="time" value="5 minuten"> 5 minuten<br>
-      			<input type="checkbox" name="time" value="6 minuten"> 6 minuten<br>
-      			<input type="checkbox" name="time" value="7 minuten"> 7 minuten<br>
+        <form>
+          <H2> Leesduur </H2>
+    	     <input type="checkbox" name="time" value="1 minuut" checked> </input><label for="checkbox"> 1 minuut </label>
+           <input type="checkbox" name="time" value="2 minuten"></input><label for="checkbox"> 2 minuten </label>
+           <input type="checkbox" name="time" value="3 minuten"></input><label for="checkbox"> 3 minuten </label>
+  		     <input type="checkbox" name="time" value="4 minuten"></input><label for="checkbox"> 4 minuten </label>
+           <input type="checkbox" name="time" value="5 minuten"></input><label for="checkbox"> 5 minuten </label>
+			     <input type="checkbox" name="time" value="6 minuten"></input><label for="checkbox"> 6 minuten </label>
 
-    			<H2> Meest bekeken </H2>
+          <H2> Meest bekeken </H2>
 
-    			<H2> Review </H2>
-    			   <p> ★★★★☆ </p>
+	        <H2> Review </H2>
+    	     <p> ★★★★☆ </p>
 
-    		  <button type="button">Zoeken</button>
-      </form>
+          <button type="button"> Zoeken </button>
+        </form>
 
-    </div>
+      </div>
+    </header>
 
-  </header>
-  <main>
+    <main>
 
-		<section>
-      <H1>Top 5 verhalen van de week </H1>
+      <H1>Verhalen van de week (5)</H1>
 
-			<article>
-				<img src="IMG/RegionaalDagblad-60-Zeijls.jpg" alt"Regionaal Dagblad" />
-          <H2><a href="verhaal.html"> Regionaal Dagblad - 60 - </a></H2>
-            <H4> Leesduur 2 minuten </H4>
-            <button type="button"> <img src="IMG/like.svg"> </button>
-            <button type="button"> <img src="IMG/download.svg"> </button>
-			</article>
+		  <section>
+			  <article>
+				      <img src="IMG/RegionaalDagbladDesktop.png" alt"Regionaal Dagblad" />
+              <H3><a href="verhaal.html"> Regionaal Dagblad - 60 - </a></H3>
+              <footer>
+                <div>
+                  <img src="IMG/time.svg">
+                  <p> 2 min </p>
+                </div>
 
-			<article>
-				<img src="IMG/hardboiled.jpeg" alt"" />
-				<H2><a href="verhaal.html"> Hardboiled - 6- </a></H2>
-            <H4> Leesduur 3 minuten </H4>
-			</article>
+                <div>
+                  <img src="IMG/star.svg">
+                  <p> 5 </p>
+                </div>
 
-			<article>
-				<img src="IMG/twitter.jpg_large" alt"" />
-				<H2><a href="verhaal.html"> Twitter -8- </a></H2>
-            <H4> Leesduur 1 minuut </H4>
-			</article>
+                <div>
+                  <img src="IMG/eye.svg">
+                  <p> 1086 x </p>
+                </div>
+              </footer>
 
-			<article>
-				<img src="IMG/verliefd.jpg" alt"" />
-				<H2><a href="verhaal.html"> Verliefd -10- </a></H2>
-            <H4> Leesduur 2 minuten </H4>
-			</article>
+              <a href="downloads.html">
+                <button type="button"> <img src="IMG/download.svg"> </button>
+              </a>
+        </article>
 
-			<article>
-				<img src="IMG/ongeluk.jpeg" alt"" />
-				<H2><a href="verhaal.html"> Ongeluk -13- </a></H2>
-            <H4> Leesduur 1 minuut </H4>
-			</article>
+        <a href="verhalenvdweek.html">
+          <button type="button"> Meer verhalen bekijken </button>
+        </a>
+      </section>
 
-		</section>
-  </main>
-	<footer>
-    <img src="IMG/facebook-logo.svg" alt="Facebook">
-    <img src="IMG/instagram-logo.svg" alt="Instagram">
-    <img src="IMG/linked-in-logo.svg" alt="LinkedIn">
-    <img src="IMG/envelope.svg" alt="Email">
+      <H2>Resultaten (67)</H2>
+      <section class="verhalen">
+          <article>
+				      <img src="IMG/Interview (78).jpg" alt"Interview" />
+              <H3><a href="verhaal.html"> Interview - 78 - </a></H3>
+              <footer>
+                <div>
+                  <img src="IMG/time.svg">
+                  <p> 2 min </p>
+                </div>
 
+                <div>
+                  <img src="IMG/star.svg">
+                  <p> 4,9 </p>
+                </div>
 
-	</footer>
+                <div>
+                  <img src="IMG/eye.svg">
+                  <p> 1086 x </p>
+                </div>
+              </footer>
 
-  <script type="text/javascript" src="js/script.js"></script>
+              <a href="downloads.html">
+                <button type="button"> <img src="IMG/download.svg"> </button>
+              </a>
+          </article>
+
+        <article>
+  				    <img src="IMG/Onomatopee jasper koenen.jpg" alt"Onomatopee" />
+              <H3><a href="verhaal.html"> Onomatopee - 77 - </a></H3>
+              <footer>
+                <div>
+                  <img src="IMG/time.svg">
+                  <p> 4 min </p>
+                </div>
+
+                <div>
+                  <img src="IMG/star.svg">
+                  <p> 2,7 </p>
+                </div>
+
+                <div>
+                  <img src="IMG/eye.svg">
+                  <p> 345 x </p>
+                </div>
+              </footer>
+
+              <a href="downloads.html">
+                <button type="button"> <img src="IMG/download.svg"> </button>
+              </a>
+        </article>
+
+        <article>
+  				    <img src="IMG/rcsuka-doof-verhaal-v1.jpg" alt"Alzheimer" />
+              <H3><a href="verhaal.html"> Doof - 71 - </a></H3>
+              <footer>
+                <div>
+                  <img src="IMG/time.svg">
+                  <p> 2 min </p>
+                </div>
+
+                <div>
+                  <img src="IMG/star.svg">
+                  <p> 3,6 </p>
+                </div>
+
+                <div>
+                  <img src="IMG/eye.svg">
+                  <p> 21 </p>
+                </div>
+              </footer>
+
+              <a href="downloads.html">
+                <button type="button"> <img src="IMG/download.svg"> </button>
+              </a>
+  			</article>
+
+        <article>
+  				    <img src="IMG/rosakoopman-ericlucassen.jpg" alt"ericlucassen" />
+              <H3><a href="verhaal.html"> Eric Lucassen - 16 - </a></H3>
+              <footer>
+                <div>
+                  <img src="IMG/time.svg">
+                  <p> 3 min </p>
+                </div>
+
+                <div>
+                  <img src="IMG/star.svg">
+                  <p> 1,2 </p>
+                </div>
+
+                <div>
+                  <img src="IMG/eye.svg">
+                  <p> 67 x </p>
+                </div>
+              </footer>
+
+              <a href="downloads.html">
+                <button type="button"> <img src="IMG/download.svg"> </button>
+              </a>
+  			</article>
+
+        <article>
+  				    <img src="IMG/verhaal.johan.jpg" alt"JohanCruijf" />
+              <H3><a href="verhaal.html"> Johan Cruijf - 14 - </a></H3>
+              <footer>
+                <div>
+                  <img src="IMG/time.svg">
+                  <p> 4 min </p>
+                </div>
+
+                <div>
+                  <img src="IMG/star.svg">
+                  <p> 5 </p>
+                </div>
+
+                <div>
+                  <img src="IMG/eye.svg">
+                  <p> 2589 x </p>
+                </div>
+              </footer>
+
+              <a href="downloads.html">
+                <button type="button"> <img src="IMG/download.svg"> </button>
+              </a>
+  			</article>
+
+        <article>
+  				    <img src="IMG/Lepra_YorickdeWit.jpg" alt"Lepra" />
+              <H3><a href="verhaal.html"> Lepra - 25 - </a></H3>
+              <footer>
+                <div>
+                  <img src="IMG/time.svg">
+                  <p> 3 min </p>
+                </div>
+
+                <div>
+                  <img src="IMG/star.svg">
+                  <p> 2,7 </p>
+                </div>
+
+                <div>
+                  <img src="IMG/eye.svg">
+                  <p> 587 x </p>
+                </div>
+              </footer>
+
+              <a href="downloads.html">
+                <button type="button"> <img src="IMG/download.svg"> </button>
+              </a>
+  			</article>
+
+        <article>
+  				    <img src="IMG/Nichterig_Desktop_Luuk_Arts.png" alt"Nichterig" />
+              <H3><a href="verhaal.html"> Nichterig - 26 - </a></H3>
+              <footer>
+                <div>
+                  <img src="IMG/time.svg">
+                  <p> 3 min </p>
+                </div>
+
+                <div>
+                  <img src="IMG/star.svg">
+                  <p> 5 </p>
+                </div>
+
+                <div>
+                  <img src="IMG/eye.svg">
+                  <p> 3009 x </p>
+                </div>
+              </footer>
+
+              <a href="downloads.html">
+                <button type="button"> <img src="IMG/download.svg"> </button>
+              </a>
+  			</article>
+
+        <article>
+  				    <img src="IMG/STIJLOEFENINGEN_22.jpg" alt"JobCohen" />
+              <H3><a href="verhaal.html"> Job Cohen - 22 - </a></H3>
+              <footer>
+                <div>
+                  <img src="IMG/time.svg">
+                  <p> 3 min </p>
+                </div>
+
+                <div>
+                  <img src="IMG/star.svg">
+                  <p> 1,4 </p>
+                </div>
+
+                <div>
+                  <img src="IMG/eye.svg">
+                  <p> 53 x </p>
+                </div>
+            </footer>
+
+              <a href="downloads.html">
+                <button type="button"> <img src="IMG/download.svg"> </button>
+              </a>
+  			</article>
+
+        <article>
+  				    <img src="IMG/rcsuka-doof-verhaal-v1.jpg" alt"Doof" />
+              <H3><a href="verhaal.html"> Doof - 71 - </a></H3>
+              <footer>
+                <div>
+                  <img src="IMG/time.svg">
+                  <p> 3 min </p>
+                </div>
+
+                <div>
+                  <img src="IMG/star.svg">
+                  <p> 3,8 </p>
+                </div>
+
+                <div>
+                  <img src="IMG/eye.svg">
+                  <p> 1506 x </p>
+                </div>
+              </footer>
+
+              <a href="downloads.html">
+                <button type="button"> <img src="IMG/download.svg"> </button>
+              </a>
+  			</article>
+
+        <article>
+  				    <img src="IMG/Verhaal_Marilyn_Doornoink.jpg" alt"CharieScheen" />
+              <H3><a href="verhaal.html"> Charie Scheen - 27 - </a></H3>
+              <footer>
+                <div>
+                  <img src="IMG/time.svg">
+                  <p> 3 min </p>
+                </div>
+
+                <div>
+                  <img src="IMG/star.svg">
+                  <p> 4,8 </p>
+                </div>
+
+                <div>
+                  <img src="IMG/eye.svg">
+                  <p> 567 x </p>
+                </div>
+              </footer>
+
+              <a href="downloads.html">
+                <button type="button"> <img src="IMG/download.svg"> </button>
+              </a>
+  			</article>
+
+        <article>
+  				    <img src="IMG/RegionaalDagbladDesktop.png" alt"RegionaalDagblad" />
+              <H3><a href="verhaal.html"> Regionaal Dagblad - 60 - </a></H3>
+              <footer>
+                <div>
+                  <img src="IMG/time.svg">
+                  <p> 4 min </p>
+                </div>
+
+                <div>
+                  <img src="IMG/star.svg">
+                  <p> 5 </p>
+                </div>
+
+                <div>
+                  <img src="IMG/eye.svg">
+                  <p> 1086 x </p>
+                </div>
+              </footer>
+
+              <a href="downloads.html">
+                <button type="button"> <img src="IMG/download.svg"> </button>
+              </a>
+  			</article>
+
+        <article>
+  				    <img src="IMG/Verhaal-martin bril-esmee janssen-web 213.jpg" alt"MartinBril" />
+              <H3><a href="verhaal.html"> Martin Bril - 95 - </a></H3>
+              <footer>
+                <div>
+                  <img src="IMG/time.svg">
+                  <p> 2 min </p>
+                </div>
+
+                <div>
+                  <img src="IMG/star.svg">
+                  <p> 4,2 </p>
+                </div>
+
+                <div>
+                  <img src="IMG/eye.svg">
+                  <p> 517 x </p>
+                </div>
+              </footer>
+
+              <a href="downloads.html">
+                <button type="button"> <img src="IMG/download.svg"> </button>
+              </a>
+  			</article>
+      </section>
+
+    </main>
+
+    <footer>
+      <img src="IMG/facebook-logo.svg" alt="Facebook">
+      <img src="IMG/instagram-logo.svg" alt="Instagram">
+      <img src="IMG/linked-in-logo.svg" alt="LinkedIn">
+      <img src="IMG/envelope.svg" alt="Email">
+  	</footer>
+
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

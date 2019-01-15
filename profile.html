@@ -1,131 +1,57 @@
 <html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-  <title>WEB Simone van Zeijl</title>
+    <title>WEB Simone van Zeijl</title>
 
-</head>
+  </head>
 
-<body>
+  <body>
 
-<header>
-  <nav>
-    <a href="index.html"><img src="IMG/wowairlogo.png" alt="Logo-WoW-Verhalen"></a>
-    <a href="verhalenvdweek.html"><img src="IMG/book.svg" alt="VerhalenvdWeek"></a>
-    <a href="downloads.html"><img src="IMG/download.svg" alt="Downloads"></a>
-    <a href="favorieten.html"><img src="IMG/like.svg" alt="Favorieten"></a>
-    <a href="profile.html"><img src="IMG/user.svg" alt="Profiel"></a>
-  </nav>
+    <header>
+      <nav>
+        <a href="index.html"><img src="IMG/wowairlogo.png" alt="Logo-WoW-Verhalen"></a>
+        <a href="verhalenvdweek.html"><img src="IMG/book.svg" alt="VerhalenvdWeek"></a>
+        <a href="downloads.html"><img src="IMG/download.svg" alt="Downloads"></a>
+        <a href="profile.html"><img src="IMG/profile.svg" alt="Profiel"></a>
+      </nav>
 
-    <form>
-        <fieldset>
-          <legend> Zoek 99 verhalen </legend>
-          <div>
-            <label>  <input type="text"> </label>
-            <button> <img src="IMG/Zoekbutton.png"> </button>
-          </div>
-        </fieldset>
-    </form>
+    </header>
 
-	</header>
+    <main>
+      <div class="profiel">
+        <form>
+          <fieldset>
+            <legend>Inloggen</legend>
+              <label for="email">Email</label>
+              <input id="Email" required type="email">
 
-	<main>
+              <label for="password">Wachtwoord</label>
+              <input id="password" required>
+              <p class="feedback">Dit gedeelte van het formulier is goed ingevuld.</p>
+          </fieldset>
 
-    <section>
-      <div>
-      <img src="IMG/filter.svg" alt="Filter icon">
-      <H1> Verhalen Filteren </H1>
-    </div>
-    </section>
+          <a href="index.html">
+          <button> Inloggen </button>
+          <button> Account aanmaken </button>
+          </a>
 
-    <div>
-      <ul>
-          <li><a>Gevoel (44)</a></li>
-          <li><a>Zweverig (18)</a></li>
-          <li><a>Old School (20)</a></li>
-          <li><a>Bondig (13)</a></li>
-      </ul>
+        </form>
+      </div>
 
-      <form>
-    			<H2> Leesduur </H2>
-    			  <input type="checkbox" name="time" value="1 minuut" checked> 1 minuut<br>
-      			<input type="checkbox" name="time" value="2 minuten"> 2 minuten<br>
-      			<input type="checkbox" name="time" value="3 minuten"> 3 minuten<br>
-      			<input type="checkbox" name="time" value="4 minuten"> 4 minuten<br>
-      			<input type="checkbox" name="time" value="5 minuten"> 5 minuten<br>
-      			<input type="checkbox" name="time" value="6 minuten"> 6 minuten<br>
-      			<input type="checkbox" name="time" value="7 minuten"> 7 minuten<br>
+      </main>
 
-    			<H2> Meest bekeken </H2>
+    	<footer>
+        <img src="IMG/facebook-logo.svg" alt="Facebook">
+        <img src="IMG/instagram-logo.svg" alt="Instagram">
+        <img src="IMG/linked-in-logo.svg" alt="LinkedIn">
+        <img src="IMG/envelope.svg" alt="Email">
+    	</footer>
 
-    			<H2> Review </H2>
-    			   <p> <a>★★★★☆ </p>
-
-    		  <button type="button">
-    			   <p>Zoeken</p>
-    		  </button>
-      </form>
-
-    </div>
-
-
-		<section>
-      <H1>Top 5 verhalen van de week </H1>
-
-			<article>
-				<img src="IMG/verrast.jpg" alt"" />
-				<H2><a href="verhaal.html"> Verrast -4- </a></H2>
-					<p> Dit is een korte beschrijving van het verhaal waarin staat waarom je het wil lezen. </p>
-					<p> ★★★★☆ </p>
-          <H4> Leesduur 2 minuten </H4>
-			</article>
-
-			<article>
-				<img src="IMG/hardboiled.jpeg" alt"" />
-				<H2><a href="verhaal.html"> Hardboiled - 6- </a></H2>
-					<p> Dit is een korte beschrijving van het verhaal waarin staat waarom je het wil lezen. </p>
-					<p> ★★★★☆ </p>
-            <H4> Leesduur 3 minuten </H4>
-			</article>
-
-			<article>
-				<img src="IMG/twitter.jpg_large" alt"" />
-				<H2><a href="verhaal.html"> Twitter -8- </a></H2>
-					<p> Dit is een korte beschrijving van het verhaal waarin staat waarom je het wil lezen. </p>
-					<p> ★★★★☆ </p>
-            <H4> Leesduur 1 minuut </H4>
-			</article>
-
-			<article>
-				<img src="IMG/verliefd.jpg" alt"" />
-				<H2><a href="verhaal.html"> Verliefd -10- </a></H2>
-					<p> Dit is een korte beschrijving van het verhaal waarin staat waarom je het wil lezen. </p>
-					<p> ★★★★☆ </p>
-            <H4> Leesduur 2 minuten </H4>
-			</article>
-
-			<article>
-				<img src="IMG/ongeluk.jpeg" alt"" />
-				<H2><a href="verhaal.html"> Ongeluk -13- </a></H2>
-					<p> Dit is een korte beschrijving van het verhaal waarin staat waarom je het wil lezen. </p>
-					<p> ★★★★☆ </p>
-            <H4> Leesduur 1 minuut </H4>
-			</article>
-
-		</section>
-  </main>
-	<footer>
-    <img src="IMG/facebook-logo.svg" alt="Facebook">
-    <img src="IMG/instagram-logo.svg" alt="Instagram">
-    <img src="IMG/linked-in-logo.svg" alt="LinkedIn">
-    <img src="IMG/envelope.svg" alt="Email">
-
-
-	</footer>
-
+      <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

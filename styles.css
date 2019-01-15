@@ -1,0 +1,443 @@
+/* Body */
+* {
+  font-family: helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+/* Header */
+
+/* Navigatie */
+
+/* Navigatie menubalk */
+header nav {
+  display: flex;
+  list-style: none;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+header nav a {
+    padding-right: 3em;
+    width: 1em;
+}
+
+header nav a img {
+  margin-top: 2em;
+  height: 2em;
+  margin-right: auto;
+  padding-left: 0;
+  padding-top: 0;
+}
+
+header nav a:last-child {
+  padding-right: 0;
+}
+
+header nav a:first-child {
+  margin-right: auto;
+}
+
+/* Zoekbalk */
+header div input {
+  padding-left: 2em;
+}
+
+header input[type="text"] {
+  width: 100%;
+}
+
+/* Categorien in filters */
+header div ul {
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  color: #8e1f81;
+  list-style: none;
+  font-size: 1em;
+  padding-left: 0;
+}
+
+/* Filter button uitklappen micro interactie */
+header > div {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+.block {
+  display: block;
+}
+
+/* Buttons */
+
+button {
+  color: white;
+  font-size: 1em;
+  border: none;
+  text-transform: uppercase;
+}
+
+button img{
+  width: 2em;
+}
+
+/* Buttons in header */
+header > button {
+  background: #8e1f81;
+  width: 80%;
+  padding: .5em;
+  border-radius: .2em;
+  margin-top: 0;
+  margin-left: 10%
+}
+
+header form button {
+  color: white;
+  text-transform: uppercase;
+}
+
+header form button img {
+  width: 2.5em;
+  height: 2em;
+  }
+
+/* Styling button filteren */
+header div form button {
+  background-color: #8e1f81;
+  padding: 1em 2em;
+  font-size: .8em;
+  margin: 5% 5% 5% 70%;
+}
+
+/* Button meer verhalen bekijken  */
+main section button {
+  background-color: #8e1f81;
+  width: 80%;
+  height: 3em;
+  margin-left: 10%;
+  border-radius: 0.2em;
+}
+
+/* Download button in article homepage */
+main section article button {
+  border-style: none;
+  background-color: #edce5a;
+  width: 3em;
+  margin: 0;
+}
+
+main section article a button {
+  position: absolute;
+  right: 1.5em;
+  bottom: 3em;
+}
+
+/* Form */
+header form {
+  padding: 1em;
+  margin: 0;
+  font-size: 1.25em;
+}
+
+header label {
+  width: 100%;
+}
+
+header form div {
+  display: flex;
+}
+
+header div {
+  background-color: #FAFAFA;
+  width: 80%;
+  margin: 5% 10%;
+}
+
+header div form {
+  margin-left: 5%;
+}
+
+header div form H2 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #8e1f81;
+  font-size: .75em;
+}
+
+header div form label {
+  font-size: .5em;
+}
+
+main form {
+  margin-top: 5em;
+  color: #8e1f81;
+  font-size: .9em;
+  margin-left: 10%;
+  margin-bottom: 26em;
+}
+
+/* main form input[type="text"] {
+  width: 80%;
+  padding: em;
+  display: block;
+  border-radius: .2em;
+} */
+
+
+
+
+/* Main */
+
+main H1, H2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #8e1f81;
+  font-size: 1.5em;
+  margin: 7% 10% 2% 10%;
+}
+
+main H2 {
+  font-weight: lighter;
+}
+
+main article H3 {
+  text-transform: capitalize;
+  font-weight: lighter;
+  font-size: 1em;
+  margin-top: 0;
+}
+
+main section article {
+  display: grid;
+  position: relative;
+  grid-template-rows: 6fr 1fr .5fr;
+  max-width: 75%;
+  max-height: 28em;
+  padding: 1em;
+  padding-bottom: 0;
+  background-color:  #edce5a;
+  margin-left: 10%;
+  margin-top: 1em;
+  margin-bottom: 5%;
+  border-radius: 0.2em;
+}
+
+.verhalen article:hover; {
+  border-color: purple;
+  border-width: 6px;
+}
+
+main section article > img {
+  width: 100%;
+  height: 20em;
+  padding: 0;
+  object-fit: cover;
+  object-position: top;
+}
+
+article > footer {
+  background-color: #edce5a;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  object-fit: cover;
+  width: 80%;
+  white-space: nowrap;
+}
+
+article footer div {
+  display: flex;
+  align-items: center;
+}
+
+article  footer img {
+  width: 1.5em;
+  height: 1em;
+}
+
+main article footer p {
+  color: #8b8c8d;
+  font-size: .8em;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #F4EEE8;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer img {
+  width: 1.5em;
+  height: 1.5em;
+  margin: 1em 10%;
+
+ }
+
+ /* Formulier Profiel */
+
+main > div > form {
+  box-sizing:border-box;
+  display:flex;
+  flex-direction:column;
+  transition: all .5s;
+  padding:1em;
+  background: #FAFAFA;
+  margin-right: 10%;
+}
+main > div > form:invalid {
+  /background: rgba(255,255,0,.8);;
+}
+
+main > div > form > fieldset {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  margin-bottom: 1em;
+  border:none;
+  transition: all .2s;
+  padding:1em;
+  background:PaleGreen;
+}
+main > div > form > fieldset:valid p {
+  display:block;
+  color: White;
+  background:seaGreen;
+  padding:.25em;
+
+}
+main > div > form > fieldset:invalid {
+  background: #F5E1F2;
+}
+main > div > form > fieldset:invalid p{
+  display:none;
+}
+main > div > form > fieldset > legend {
+  font-weight:bold;
+}
+main > div > form > fieldset > input {
+  border-color:#000;
+  padding:.25em;
+  font-size: 1.25em;
+  margin-bottom: 1em;
+  width:100%;
+  transition:all 2s;
+  z-index:2;
+}
+main > div > form > fieldset > input:valid {
+  border-color:green;
+}
+main > div > form > fieldset > input:invalid {
+  border-color:MediumVioletRed;
+  background: #E5BADE;
+}
+main > div > form > fieldset > input:focus {
+  transform: scale(1.01, 1.01);
+}
+main > div > form > fieldset > input:focus + p.tooltip {
+  display:block;
+  opacity:1;
+  margin-top:-1.3em;
+}
+main > div > form > fieldset > input:disabled {
+  border-color:#eee;
+  background-color: #f9f9f9;
+}
+main > div > form > fieldset > input::placeholder {
+  color:rgba(0,0,0,.25);
+  font-style:italic;
+}
+main > div > form > a > button {
+    color: white;
+    background-color: #8e1f81;
+    font-size: .8em;
+    display: block;
+    margin-top: 3em;
+    margin-left: 40%;
+    width: 50%;
+    height: 3em;
+    border-radius: .2em;
+}
+
+main > div > form > a > button:last-child {
+    color: #8e1f81;
+    background-color: white;
+    text-decoration: underline;
+    margin-top: 0;
+}
+
+main > div > form:valid button {
+  opacity:1
+}
+main > div > form > button:focus {
+  transform: scale(1.1, 1.1);
+}
+.tooltip {
+  z-index:1;
+  color:DodgerBlue;
+  padding:.25em;
+  background:AliceBlue;
+  border: 1px solid currentColor;
+  font-style:italic;
+  transition:all .2s;
+  margin-top:-3em;
+  opacity:0;
+}
+
+
+ /* Responsive website, media queries */
+
+@media(min-width:40em){
+    .verhalen {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 70em;
+}
+
+
+@media(min-width:70em){
+    .verhalen {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+          margin-left: 7%;
+          margin-bottom: 5%;
+    }
+
+    /* .verhalen article {
+      grid-template-rows:3fr 1fr 1fr;
+      max-height: 20em;
+      max-width: 15em;
+    } */
+
+    /* button img {
+      height: 1em;
+      width: 1em;
+    }
+
+    main section article div img {
+      width: .5em;
+      height: .5em;
+    }
+
+    main section article div p {
+      font-size: 0.5em;
+    }
+
+    main section article > img {
+      height: 10em;
+    }
+
+    main section article a button {
+      bottom: 3em;
+      right: .5em;
+    }
+
+    main section button {
+      height: 1em;
+    } */
