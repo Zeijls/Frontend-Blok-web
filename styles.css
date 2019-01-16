@@ -57,8 +57,9 @@ header div ul {
   text-transform: uppercase;
   color: #8e1f81;
   list-style: none;
-  font-size: 1em;
+  font-size: .8em;
   padding-left: 0;
+  margin-top: 1em;
 }
 
 /* Filter button uitklappen micro interactie */
@@ -161,15 +162,36 @@ header div form {
   margin-left: 5%;
 }
 
+/* Stijling uitklap button Filters */
+header div form label {
+  font-size: .5em;
+}
+
 header div form H2 {
   text-transform: uppercase;
   font-weight: lighter;
   color: #8e1f81;
   font-size: .75em;
+  margin-left: 0;
 }
 
-header div form label {
+header div form input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40%;
+  height: 1em;
+  background: #8e1f81;
+  cursor: pointer;
+}
+
+header form img {
+  width: 1em;
+  height: 1em;
+}
+
+header div form p {
   font-size: .5em;
+  color: #8e1f81;
 }
 
 main form {
@@ -179,16 +201,6 @@ main form {
   margin-left: 10%;
   margin-bottom: 26em;
 }
-
-/* main form input[type="text"] {
-  width: 80%;
-  padding: em;
-  display: block;
-  border-radius: .2em;
-} */
-
-
-
 
 /* Main */
 
@@ -208,14 +220,14 @@ main article H3 {
   text-transform: capitalize;
   font-weight: lighter;
   font-size: 1em;
-  margin-top: 0;
+  margin-top: 1em;;
 }
 
 main section article {
   display: grid;
   position: relative;
   grid-template-rows: 6fr 1fr .5fr;
-  max-width: 75%;
+  max-width: 77%;
   max-height: 28em;
   padding: 1em;
   padding-bottom: 0;
@@ -282,7 +294,6 @@ footer img {
  }
 
  /* Formulier Profiel */
-
 main > div > form {
   box-sizing:border-box;
   display:flex;
@@ -379,65 +390,90 @@ main > div > form:valid button {
 main > div > form > button:focus {
   transform: scale(1.1, 1.1);
 }
-.tooltip {
-  z-index:1;
-  color:DodgerBlue;
-  padding:.25em;
-  background:AliceBlue;
-  border: 1px solid currentColor;
-  font-style:italic;
-  transition:all .2s;
-  margin-top:-3em;
-  opacity:0;
-}
-
 
  /* Responsive website, media queries */
 
-@media(min-width:40em){
+ /* Breakpoint 1 */
+@media(min-width:45em){
     .verhalen {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 70em;
 }
 
-
+ /* Breakpoint 2 */
 @media(min-width:70em){
     .verhalen {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-          margin-left: 7%;
-          margin-bottom: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin: 2% 8% 5%;
     }
 
-    /* .verhalen article {
-      grid-template-rows:3fr 1fr 1fr;
-      max-height: 20em;
-      max-width: 15em;
-    } */
+    .verhalen article {
+      max-height: 15em;
+    }
 
-    /* button img {
+    .verhalen article > img {
+      height: 9em;
+    }
+
+    .verhalen button {
+      height: 1em;
+    }
+
+    .verhalen article a button {
+      bottom: 2.5em;
+      right: .2em;
+    }
+
+    .verhalen button img {
       height: 1em;
       width: 1em;
     }
 
-    main section article div img {
+    .verhalen article div img {
       width: .5em;
       height: .5em;
     }
 
-    main section article div p {
+    .verhalen article div p {
       font-size: 0.5em;
     }
 
-    main section article > img {
-      height: 10em;
-    }
-
+/* Download Button Verhaal van de week */
     main section article a button {
-      bottom: 3em;
-      right: .5em;
+      right: 4em;
+      bottom: 2em;
+      height: 3em;
+    }
+    /* Categorien in filters */
+    header div ul {
+      font-size: 1.5em;
     }
 
-    main section button {
-      height: 1em;
-    } */
+    /* Stijling uitklap button Filters */
+    header div form label {
+      font-size: .8em;
+    }
+
+    header div form H2 {
+      font-size: 1em;
+      margin-top: 2%;
+    }
+
+    header form img {
+      width: 2em;
+      height: 2em;
+    }
+
+    header div form p {
+      font-size: 1em;
+    }
+
+    /* Button meer verhalen zoeken */
+    main section a button {
+      height: 5em;
+      margin-top: 0;
+    }
+
+  }

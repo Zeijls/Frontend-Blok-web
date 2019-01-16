@@ -131,13 +131,37 @@ header div {
   margin: 5% 10%;
 }
 
+/* Stijling uitklap button Filters */
+header div form label {
+  font-size: .5em;
+}
 
-/* main form input[type="text"] {
-  width: 80%;
-  padding: 3em;
-  display: block;
-  border-radius: .2em;
-} */
+header div form H2 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #8e1f81;
+  font-size: .75em;
+  margin-left: 0;
+}
+
+header div form input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40%;
+  height: 1em;
+  background: #8e1f81;
+  cursor: pointer;
+}
+
+header form img {
+  width: 1em;
+  height: 1em;
+}
+
+header form p {
+  font-size: .5em;
+  color: #8e1f81;
+}
 
 /* Main */
 
@@ -181,6 +205,11 @@ main section button {
   right: 0;
 }
 
+main section button img {
+  width: 4em;
+  height: 4em;
+}
+
 /* Button review plaatsen */
 .scroll {
   background-color: #edce5a;
@@ -189,6 +218,35 @@ main section button {
   height: 3em;
   border-radius: .2em;
   margin: 1% 10% 3% ;
+  position: absolute;
+  left: 0;
+}
+
+/* GIF interactie */
+main section img {
+  width: 100%;
+}
+
+/* Formulier opmerking plaatsen */
+
+main section form a button {
+  width: 20%;
+  height: 3em;
+  background-color:#8e1f81;
+  margin-top: 5%;
+  margin-right: 3%;
+}
+
+main section form placeholder{
+  padding: 1em;
+}
+
+main section form textarea {
+  width: 60%;
+  height: 5em;
+  margin-left: 10%;
+  margin-top: 5%;
+
 }
 
 /* Footer */
@@ -205,23 +263,51 @@ footer img {
   width: 1.5em;
   height: 1.5em;
   margin: 1em 10%;
-
  }
 
- /* @media(max-width:60em){
-    .verhaal {
-        background-image: url(IMG/RegionaalDagbladMobile.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+ /* Breakpoint 1 Mobiel */
+@media only screen and (max-width: 600px){
+
+  img[src="IMG/RegionaalDagbladDesktop.png"]{
+    display: none;
+  }
+
+  img[src="IMG/RegionaalDagbladMobile.png"]{
+    width: 100%;
+    }
+
+  main H1 {
+    font-size: 1em;
+    }
+
+    main section footer {
+      font-size: .6em;
+    }
+
+    main section footer p {
+      display: inline-block;
+      font-size: 1.2em;
+    }
+
+    main section button img {
+      width: 2em;
+      height: 2em;
+    }
+
+    main section form a button {
+      font-size: .8em;
+    }
+}
+
+/* Breakpoint 2 Tablet/Desktop */
+@media only screen and (min-width: 600px){
+
+    img[src="IMG/RegionaalDagbladMobile.png"]{
+        display:none;
+    }
+
+    img[src="IMG/RegionaalDagbladDesktop.png"]{
+        width: 100%;
     }
 
 }
-
-@media (max-width:30em) {
-    .verhaalpagina {
-        background-image: url(IMG/RegionaalDagbladDesktop.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height:180em;
-    }
-} */
