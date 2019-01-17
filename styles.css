@@ -11,7 +11,6 @@ body {
 /* Header */
 
 /* Navigatie */
-
 /* Navigatie menubalk */
 header nav {
   display: flex;
@@ -74,7 +73,6 @@ header > div {
 }
 
 /* Buttons */
-
 button {
   color: white;
   font-size: 1em;
@@ -119,7 +117,7 @@ main section button {
   background-color: #8e1f81;
   width: 80%;
   height: 3em;
-  margin-left: 10%;
+  margin-left: 5%;
   border-radius: 0.2em;
 }
 
@@ -148,10 +146,12 @@ header label {
   width: 100%;
 }
 
+/* Zoekbalk */
 header form div {
   display: flex;
 }
 
+/* Filters toepassen */
 header div {
   background-color: #FAFAFA;
   width: 80%;
@@ -162,7 +162,6 @@ header div form {
   margin-left: 5%;
 }
 
-/* Stijling uitklap button Filters */
 header div form label {
   font-size: .5em;
 }
@@ -194,6 +193,7 @@ header div form p {
   color: #8e1f81;
 }
 
+/* Profiel aanmaken */
 main form {
   margin-top: 5em;
   color: #8e1f81;
@@ -203,7 +203,7 @@ main form {
 }
 
 /* Main */
-
+/* Headers */
 main H1, H2 {
   text-transform: uppercase;
   font-weight: bold;
@@ -223,6 +223,7 @@ main article H3 {
   margin-top: 1em;;
 }
 
+/* Verhalen homepage*/
 main section article {
   display: grid;
   position: relative;
@@ -232,9 +233,7 @@ main section article {
   padding: 1em;
   padding-bottom: 0;
   background-color:  #edce5a;
-  margin-left: 10%;
-  margin-top: 1em;
-  margin-bottom: 5%;
+  margin: 1em 5% 5%;
   border-radius: 0.2em;
 }
 
@@ -261,37 +260,21 @@ article > footer {
   white-space: nowrap;
 }
 
-article footer div {
+main section article footer div {
   display: flex;
   align-items: center;
 }
 
-article  footer img {
+main section article  footer img {
   width: 1.5em;
   height: 1em;
 }
 
-main article footer p {
+main section article footer p {
   color: #8b8c8d;
   font-size: .8em;
   font-weight: bold;
 }
-
-footer {
-  background-color: #F4EEE8;
-  width: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-footer img {
-  width: 1.5em;
-  height: 1.5em;
-  margin: 1em 10%;
-
- }
 
  /* Formulier Profiel */
 main > div > form {
@@ -303,9 +286,6 @@ main > div > form {
   background: #FAFAFA;
   margin-right: 10%;
 }
-main > div > form:invalid {
-  /background: rgba(255,255,0,.8);;
-}
 
 main > div > form > fieldset {
   display:flex;
@@ -315,26 +295,28 @@ main > div > form > fieldset {
   border:none;
   transition: all .2s;
   padding:1em;
-  background:PaleGreen;
 }
+
 main > div > form > fieldset:valid p {
   display:block;
   color: White;
-  background:seaGreen;
+  background:#8e1f81;
   padding:.25em;
-
 }
+
 main > div > form > fieldset:invalid {
   background: #F5E1F2;
 }
+
 main > div > form > fieldset:invalid p{
   display:none;
 }
+
 main > div > form > fieldset > legend {
   font-weight:bold;
 }
+
 main > div > form > fieldset > input {
-  border-color:#000;
   padding:.25em;
   font-size: 1.25em;
   margin-bottom: 1em;
@@ -342,29 +324,25 @@ main > div > form > fieldset > input {
   transition:all 2s;
   z-index:2;
 }
+
 main > div > form > fieldset > input:valid {
-  border-color:green;
+  border-color:##8e1f81;
 }
+
 main > div > form > fieldset > input:invalid {
-  border-color:MediumVioletRed;
+  border-color:#E5BADE;
   background: #E5BADE;
 }
+
 main > div > form > fieldset > input:focus {
   transform: scale(1.01, 1.01);
 }
-main > div > form > fieldset > input:focus + p.tooltip {
-  display:block;
-  opacity:1;
-  margin-top:-1.3em;
-}
-main > div > form > fieldset > input:disabled {
-  border-color:#eee;
-  background-color: #f9f9f9;
-}
+
 main > div > form > fieldset > input::placeholder {
   color:rgba(0,0,0,.25);
   font-style:italic;
 }
+
 main > div > form > a > button {
     color: white;
     background-color: #8e1f81;
@@ -391,6 +369,22 @@ main > div > form > button:focus {
   transform: scale(1.1, 1.1);
 }
 
+/* Footer */
+footer {
+  background-color: #F4EEE8;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer img {
+  width: 1.5em;
+  height: 1.5em;
+  margin: 1em 10%;
+ }
+
  /* Responsive website, media queries */
 
  /* Breakpoint 1 */
@@ -406,7 +400,7 @@ main > div > form > button:focus {
     .verhalen {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        margin: 2% 8% 5%;
+        margin: 2% 10% 5%;
     }
 
     .verhalen article {
@@ -438,6 +432,10 @@ main > div > form > button:focus {
 
     .verhalen article div p {
       font-size: 0.5em;
+    }
+/* Verhaal van de week */
+    main section {
+      margin-left: 10%;
     }
 
 /* Download Button Verhaal van de week */
@@ -475,5 +473,4 @@ main > div > form > button:focus {
       height: 5em;
       margin-top: 0;
     }
-
   }
