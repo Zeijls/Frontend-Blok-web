@@ -27,9 +27,10 @@
         </div>
       </form>
 
-      <button><img src="IMG/filter.svg">Filters toepassen</button>
 
-      <div>
+      <div class="banner">
+      <button><img src="IMG/filter.svg">Filters toepassen</button>
+      <div class="block-widescreen">
         <ul>
           <li><a>Gevoel (44)</a></li>
           <li><a>Zweverig (18)</a></li>
@@ -39,12 +40,24 @@
 
         <form>
           <H2> Leesduur </H2>
-    	     <input type="checkbox" name="time" value="1 minuut" checked> </input><label for="checkbox"> 1 minuut </label>
-           <input type="checkbox" name="time" value="2 minuten"></input><label for="checkbox"> 2 minuten </label>
-           <input type="checkbox" name="time" value="3 minuten"></input><label for="checkbox"> 3 minuten </label>
-  		     <input type="checkbox" name="time" value="4 minuten"></input><label for="checkbox"> 4 minuten </label>
-           <input type="checkbox" name="time" value="5 minuten"></input><label for="checkbox"> 5 minuten </label>
-			     <input type="checkbox" name="time" value="6 minuten"></input><label for="checkbox"> 6 minuten </label>
+    	     <label>
+             <input type="checkbox" name="time" value="1 minuut" checked> </input> 1 minuut
+           </label>
+           <label>
+             <input type="checkbox" name="time" value="2 minuten"></input> 2 minuten
+           </label>
+           <label>
+             <input type="checkbox" name="time" value="3 minuten"></input> 3 minuten
+           </label>
+           <label>
+  		         <input type="checkbox" name="time" value="4 minuten"></input> 4 minuten
+          </label>
+          <label>
+           <input type="checkbox" name="time" value="5 minuten"></input> 5 minuten
+          </label>
+          <label>
+			     <input type="checkbox" name="time" value="6 minuten"></input> 6 minuten
+          </label>
 
           <H2> Meest bekeken </H2>
           <input type="range" min="1" max="100" value="50">
@@ -62,6 +75,7 @@
         </form>
 
       </div>
+    </div>
     </header>
 
     <main>
@@ -89,9 +103,35 @@
                 </div>
               </footer>
 
-              <a href="downloads.html">
-                <button type="button"> <img src="IMG/download.svg"> </button>
-              </a>
+                <button class="download" type="button">
+                  <div>
+                    <svg class="progress" width="45" height="45" viewBox="0 0 120 120">
+                      <circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12" />
+                      <circle class="progress__value" cx="60" cy="60" r="54" fill="none" stroke="#8e1f81" stroke-width="12" />
+                    </svg>
+                    <svg class="download-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                      <style type="text/css">
+                      	.st0{fill:#A70291;}
+                      </style>
+                      <g>
+                      	<g>
+                      		<path class="st0" d="M382.6,233.4c-2.6-5.7-8.3-9.4-14.6-9.4h-64V16c0-8.8-7.2-16-16-16h-64c-8.8,0-16,7.2-16,16v208h-64
+                      			c-6.3,0-12,3.7-14.6,9.4c-2.6,5.7-1.6,12.4,2.5,17.2l112,128c3,3.5,7.4,5.5,12,5.5s9-2,12-5.5l112-128
+                      			C384.2,245.8,385.2,239.1,382.6,233.4z"/>
+                      	</g>
+                      </g>
+                      <g>
+                      	<g>
+                      		<path class="st0" d="M432,352v96H80v-96H16v128c0,17.7,14.3,32,32,32h416c17.7,0,32-14.3,32-32V352H432z"/>
+                      	</g>
+                      </g>
+                    </svg>
+                    <svg version="1.1" class="checkmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                      <polyline class="check" fill="none" stroke="#8e1f81" stroke-width="10" stroke-miterlimit="20" points="15,60 40,80 85,20" />
+                    </svg>
+                  </div>
+                 </button>
         </article>
 
         <a href="verhalenvdweek.html">
@@ -101,9 +141,9 @@
 
       <H2>Resultaten (67)</H2>
       <section class="verhalen">
-          <article>
+          <article action="verhaal.html">
 				      <img src="IMG/Interview (78).jpg" alt"Interview" />
-              <H3><a href="verhaal.html"> Interview - 78 - </a></H3>
+              <H3><a href="verhaal.html"> Presentator die ten onrechte denkt aansluiting te hebben gevonden bij ‘de kids’ - 85 - </a></H3>
               <footer>
                 <div>
                   <img src="IMG/time.svg">

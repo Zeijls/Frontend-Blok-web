@@ -50,6 +50,10 @@ header input[type="text"] {
   width: 100%;
 }
 
+header div input:hover {
+  border: solid 5px #8e1f81;
+}
+
 /* Categorien in filters */
 header div ul {
   display: flex;
@@ -201,9 +205,92 @@ main section button {
   right: 0;
 }
 
+
 main section button img {
   width: 4em;
   height: 4em;
+}
+
+/* Download button in article homepage */
+main section article button {
+  border-style: none;
+  background-color: #edce5a;
+  width: 3em;
+  margin: 0;
+}
+
+main section button {
+  outline:none;
+}
+
+main section button div {
+  position: relative;
+}
+button div .download-svg {
+  transform: scale(0.3);
+  position: absolute;
+  top: -44px;
+  left: 0;
+}
+
+
+button div .progress {
+  display: none;
+}
+
+.start-download .download-svg {
+  display: none;
+}
+
+.start-download .progress,
+.start-download .checkmark {
+  display: inline;
+}
+
+.progress {
+	transform: rotate(-90deg);
+}
+
+.progress__value {
+	stroke-dasharray: 339.292;
+	stroke-dashoffset: 679;
+	animation: progress 2s;
+}
+
+@keyframes progress {
+	from {
+		stroke-dashoffset: 339.292;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+button div .checkmark {
+  position: absolute;
+  top: 8px;
+  left: 51px;
+  display: none;
+}
+
+button div .checkmark polyline {
+  transform:scale(0.3);
+}
+
+button div .checkmark polyline {
+  stroke-dasharray: 130px 130px;
+  stroke-dashoffset: 130px;
+  animation: fill 2s forwards;
+  animation-delay: 1.8s;
+}
+
+@keyframes fill{
+  from {
+    stroke-dashoffset: 130px;
+  }
+  to {
+    stroke-dashoffset: 0px;
+  }
 }
 
 /* Button review plaatsen */
@@ -225,11 +312,18 @@ main section img {
 
 /* Formulier opmerking plaatsen */
 
+main section H2 {
+  color: #8e1f81;
+  text-transform: uppercase;
+  font-weight: lighter;
+  margin: 5% 10% 1%;
+}
+
 main section form a button {
   width: 20%;
   height: 3em;
   background-color:#8e1f81;
-  margin-top: 5%;
+  margin-top: 1%;
   margin-right: 3%;
 }
 
@@ -240,9 +334,11 @@ main section form placeholder{
 main section form textarea {
   width: 60%;
   height: 5em;
-  margin-left: 10%;
-  margin-top: 5%;
+  margin: 1% 10% 5%;
+}
 
+main section form textarea:hover {
+  border: solid 5px #8e1f81;
 }
 
 /* Footer */
@@ -305,5 +401,18 @@ footer img {
     img[src="IMG/RegionaalDagbladDesktop.png"]{
         width: 100%;
     }
+
+    header > button {
+      width: 30%;
+    }
+
+    header input[type="text"] {
+      width: 40%;
+    }
+
+    /* .desktop {
+      display: flex;
+      justify-content: space-around;
+    } */
 
 }

@@ -49,6 +49,10 @@ header input[type="text"] {
   width: 100%;
 }
 
+header div input:hover {
+  border: solid 5px #8e1f81;
+}
+
 /* Categorien in filters */
 header div ul {
   display: flex;
@@ -94,6 +98,14 @@ header > button {
   margin-left: 10%
 }
 
+header>button:hover {
+  border: solid 5px #8e1f81;
+}
+
+header form button:hover {
+  border: solid 5px #8e1f81;
+}
+
 header form button {
   color: white;
   text-transform: uppercase;
@@ -115,7 +127,7 @@ header div form button {
 /* Button meer verhalen bekijken  */
 main section button {
   background-color: #8e1f81;
-  width: 80%;
+  width: 82.5%;
   height: 3em;
   margin-left: 5%;
   border-radius: 0.2em;
@@ -127,13 +139,82 @@ main section article button {
   background-color: #edce5a;
   width: 3em;
   margin: 0;
+  font-size:0;
 }
 
-main section article a button {
+main section article button {
   position: absolute;
   right: 1.5em;
   bottom: 3em;
 }
+
+main section article button {
+  outline:none;
+}
+
+main section article button div {
+  position: relative;
+}
+
+button div .progress {
+  display: none;
+}
+
+.start-download .download-svg {
+  display: none;
+}
+
+.start-download .progress,
+.start-download .checkmark {
+  display: inline;
+}
+
+.progress {
+	transform: rotate(-90deg);
+}
+
+.progress__value {
+	stroke-dasharray: 339.292;
+	stroke-dashoffset: 679;
+	animation: progress 2s;
+}
+
+@keyframes progress {
+	from {
+		stroke-dashoffset: 339.292;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+button div .checkmark {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  display: none;
+}
+
+button div .checkmark polyline {
+  transform:scale(0.3);
+}
+
+button div .checkmark polyline {
+  stroke-dasharray: 130px 130px;
+  stroke-dashoffset: 130px;
+  animation: fill 2s forwards;
+  animation-delay: 1.8s;
+}
+
+@keyframes fill{
+  from {
+    stroke-dashoffset: 130px;
+  }
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
 
 /* Form */
 header form {
@@ -219,7 +300,7 @@ main H2 {
 main article H3 {
   text-transform: capitalize;
   font-weight: lighter;
-  font-size: 1em;
+  font-size: .8em;
   margin-top: 1em;;
 }
 
@@ -227,19 +308,18 @@ main article H3 {
 main section article {
   display: grid;
   position: relative;
-  grid-template-rows: 6fr 1fr .5fr;
+  grid-template-rows: 5fr 2fr .5fr;
   max-width: 77%;
   max-height: 28em;
   padding: 1em;
   padding-bottom: 0;
   background-color:  #edce5a;
-  margin: 1em 5% 5%;
+  margin: 1em 5%;
   border-radius: 0.2em;
 }
 
-.verhalen article:hover; {
-  border-color: purple;
-  border-width: 6px;
+main section article:hover {
+  border: solid 8px #8e1f81;
 }
 
 main section article > img {
@@ -256,7 +336,7 @@ article > footer {
   flex-direction: row;
   justify-content: space-between;
   object-fit: cover;
-  width: 80%;
+  width: 90%;
   white-space: nowrap;
 }
 
@@ -272,7 +352,7 @@ main section article  footer img {
 
 main section article footer p {
   color: #8b8c8d;
-  font-size: .8em;
+  font-size: .6em;
   font-weight: bold;
 }
 
@@ -388,12 +468,25 @@ footer img {
  /* Responsive website, media queries */
 
  /* Breakpoint 1 */
-@media(min-width:45em){
+@media(min-width:50em){
     .verhalen {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 70em;
-}
+    }
+
+    main section {
+      margin-left: 10%;
+    }
+
+    main article H3 {
+      font-size: .8em;
+    }
+
+    main section article footer p {
+      font-size: .5em;
+    }
+
 
  /* Breakpoint 2 */
 @media(min-width:70em){
@@ -408,7 +501,7 @@ footer img {
     }
 
     .verhalen article > img {
-      height: 9em;
+      height: 8em;
     }
 
     .verhalen button {
@@ -444,6 +537,7 @@ footer img {
       bottom: 2em;
       height: 3em;
     }
+
     /* Categorien in filters */
     header div ul {
       font-size: 1.5em;
@@ -472,5 +566,18 @@ footer img {
     main section a button {
       height: 5em;
       margin-top: 0;
+    }
+
+    /* Banner bij desktop */
+    .banner {
+      background-image: url("../IMG/Banner.jpg");
+    }
+
+    .block-widescreen {
+      display: block;
+    }
+
+    main article H3 {
+      font-size: .6em;
     }
   }

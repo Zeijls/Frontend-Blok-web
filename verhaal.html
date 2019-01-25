@@ -20,14 +20,16 @@
         <a href="profile.html"><img src="IMG/profile.svg" alt="Profiel"></a>
       </nav>
 
-      <form>
-        <div>
-          <input type="text" placeholder="Zoek 99 verhalen">
-          <button> <img src="IMG/Zoekbutton.png"> </button>
-        </div>
-      </form>
+      <!-- <div class="desktop"> -->
+        <form>
+          <div>
+            <input type="text" placeholder="Zoek 99 verhalen">
+            <button> <img src="IMG/Zoekbutton.png"> </button>
+          </div>
+        </form>
 
-      <button><img src="IMG/filter.svg">Filters toepassen</button>
+        <button><img src="IMG/filter.svg">Filters toepassen</button>
+      <!-- </div> -->
 
       <div>
         <ul>
@@ -67,25 +69,55 @@
     <main>
 
       <H1> Regionaal Dagblad - 60 - </H1>
-      <section>
-        <button type="button"> <img src="IMG/download.svg"> </button>
-        <footer>
-              <div>
-                <img src="IMG/time.svg">
-                <p> 2 min </p>
-              </div>
+      <label>
+        <section>
+          <button class="download" type="button">
+            <div>
+              <svg class="progress" width="45" height="45" viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12" />
+                <circle class="progress__value" cx="60" cy="60" r="54" fill="none" stroke="#8e1f81" stroke-width="12" />
+              </svg>
+              <svg class="download-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <style type="text/css">
+                  .st0{fill:#A70291;}
+                </style>
+                <g>
+                  <g>
+                    <path class="st0" d="M382.6,233.4c-2.6-5.7-8.3-9.4-14.6-9.4h-64V16c0-8.8-7.2-16-16-16h-64c-8.8,0-16,7.2-16,16v208h-64
+                      c-6.3,0-12,3.7-14.6,9.4c-2.6,5.7-1.6,12.4,2.5,17.2l112,128c3,3.5,7.4,5.5,12,5.5s9-2,12-5.5l112-128
+                      C384.2,245.8,385.2,239.1,382.6,233.4z"/>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path class="st0" d="M432,352v96H80v-96H16v128c0,17.7,14.3,32,32,32h416c17.7,0,32-14.3,32-32V352H432z"/>
+                  </g>
+                </g>
+              </svg>
+              <svg version="1.1" class="checkmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                <polyline class="check" fill="none" stroke="#8e1f81" stroke-width="10" stroke-miterlimit="20" points="15,60 40,80 85,20" />
+              </svg>
+            </div>
+           </button>
+          <footer>
+                <div>
+                  <img src="IMG/time.svg">
+                  <p> 2 min </p>
+                </div>
 
-              <div>
-                <img src="IMG/star.svg">
-                <p> 4,9 </p>
-              </div>
+                <div>
+                  <img src="IMG/star.svg">
+                  <p> 4,9 </p>
+                </div>
 
-              <div>
-                <img src="IMG/eye.svg">
-                <p> 1086 x </p>
-              </div>
-          </footer>
-      </section>
+                <div>
+                  <img src="IMG/eye.svg">
+                  <p> 1086 x </p>
+                </div>
+            </footer>
+        </section>
+    </label>
 
       <section>
         <button class="scroll"> Review plaatsen </button>
@@ -98,6 +130,7 @@
       </section>
 
       <section>
+            <H2> Plaats hier uw review! </H2>
             <form>
               <textarea placeholder="Plaats hier uw opmerking..." rows="4" cols="50"></textarea>
 
