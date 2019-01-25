@@ -139,7 +139,6 @@ main section article button {
   background-color: #edce5a;
   width: 3em;
   margin: 0;
-  font-size:0;
 }
 
 main section article button {
@@ -297,11 +296,15 @@ main H2 {
   font-weight: lighter;
 }
 
-main article H3 {
+main section article H3 {
   text-transform: capitalize;
   font-weight: lighter;
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+.verhalen article H3 {
   font-size: .8em;
-  margin-top: 1em;;
 }
 
 /* Verhalen homepage*/
@@ -479,13 +482,19 @@ footer img {
       margin-left: 10%;
     }
 
-    main article H3 {
+    .verhalen article H3 {
       font-size: .8em;
     }
 
-    main section article footer p {
+    .verhalen article footer p {
       font-size: .5em;
     }
+
+    main section article button {
+    position: absolute;
+    right: 1.5em;
+    bottom: 2em;
+}
 
 
  /* Breakpoint 2 */
@@ -577,7 +586,8 @@ footer img {
       display: block;
     }
 
-    main article H3 {
+    .verhalen article H3 {
       font-size: .6em;
     }
+
   }

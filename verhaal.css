@@ -406,9 +406,16 @@ footer img {
       width: 30%;
     }
 
-    header input[type="text"] {
+    button div .checkmark {
+    position: absolute;
+    top: 8px;
+    left: 115px;
+    display: none;
+}
+
+    /* header input[type="text"] {
       width: 40%;
-    }
+    } */
 
     /* .desktop {
       display: flex;
