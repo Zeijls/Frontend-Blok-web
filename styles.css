@@ -96,19 +96,13 @@ header > button {
   border-radius: .2em;
   margin-top: 0;
   margin-left: 10%
-}
-
-header>button:hover {
-  border: solid 5px #8e1f81;
-}
-
-header form button:hover {
-  border: solid 5px #8e1f81;
+  /* border: 5px white; */
 }
 
 header form button {
   color: white;
   text-transform: uppercase;
+  /* border: 5px white; */
 }
 
 header form button img {
@@ -127,7 +121,7 @@ header div form button {
 /* Button meer verhalen bekijken  */
 main section button {
   background-color: #8e1f81;
-  width: 82.5%;
+  width: 80%;
   height: 3em;
   margin-left: 5%;
   border-radius: 0.2em;
@@ -289,7 +283,7 @@ main H1, H2 {
   font-weight: bold;
   color: #8e1f81;
   font-size: 1.5em;
-  margin: 7% 10% 2% 10%;
+  margin: 7% 25% 2% 15%;
 }
 
 main H2 {
@@ -322,7 +316,7 @@ main section article {
 }
 
 main section article:hover {
-  border: solid 8px #8e1f81;
+  border: solid 5px #8e1f81;
 }
 
 main section article > img {
@@ -452,6 +446,11 @@ main > div > form > button:focus {
   transform: scale(1.1, 1.1);
 }
 
+/* Downloads en verhalen vd Week */
+.kortePagina {
+  margin-bottom: 15em;
+}
+
 /* Footer */
 footer {
   background-color: #F4EEE8;
@@ -540,6 +539,14 @@ footer img {
       margin-left: 10%;
     }
 
+    main section article footer {
+      width: 80%;
+    }
+
+    main section article footer p {
+      font-size: 1em;
+    }
+
 /* Download Button Verhaal van de week */
     main section article a button {
       right: 4em;
@@ -579,11 +586,63 @@ footer img {
 
     /* Banner bij desktop */
     .banner {
-      background-image: url("../IMG/Banner.jpg");
+      display: block;
+      background-image: url("../IMG/seats.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      height: 25rem;
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 15%;
+
     }
 
     .block-widescreen {
       display: block;
+      position: absolute;
+      top: 21.5rem;
+      left: 2em;
+      margin: 0% 5%;
+      width: 40%;
+    }
+
+    .block-widescreen ul li a {
+      font-size: .5em;
+      justify-content: space-around;
+      font-weight: bold;
+    }
+
+    .block-widescreen form {
+      width: 20em;
+    }
+
+    .block-widescreen button{
+      padding: 1em 1.5em;
+      margin: 5% 5% 5% 70%;
+    }
+
+    .block-widescreen form H2{
+      font-size: 0.75em;
+      margin-top: 5%;
+    }
+
+    .block-widescreen form label{
+      font-size: 0.5em;
+    }
+
+    .block-widescreen form img{
+      width: 1em;
+      height: 1em;
+    }
+
+    .block-widescreen form p{
+      font-size: .5em;
+    }
+
+    .hiding {
+      display: none;
     }
 
     .verhalen article H3 {

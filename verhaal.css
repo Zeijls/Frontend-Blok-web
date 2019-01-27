@@ -130,7 +130,7 @@ header form div {
 header div {
   background-color: #FAFAFA;
   width: 80%;
-  margin: 5% 10%;
+  margin: 0% 10%;
 }
 
 /* Stijling uitklap button Filters */
@@ -171,7 +171,7 @@ main H1 {
   font-weight: bold;
   color: #8e1f81;
   font-size: 1.5em;
-  margin: 7% 10% 1% 10%;
+  margin: 3% 10% 1% 10%;
 }
 
 /* Verhaal pagina */
@@ -209,61 +209,6 @@ main section button {
 main section button img {
   width: 4em;
   height: 4em;
-}
-
-/* Download button in article homepage */
-main section article button {
-  border-style: none;
-  background-color: #edce5a;
-  width: 3em;
-  margin: 0;
-}
-
-main section button {
-  outline:none;
-}
-
-main section button div {
-  position: relative;
-}
-button div .download-svg {
-  transform: scale(0.3);
-  position: absolute;
-  top: -44px;
-  left: 0;
-}
-
-
-button div .progress {
-  display: none;
-}
-
-.start-download .download-svg {
-  display: none;
-}
-
-.start-download .progress,
-.start-download .checkmark {
-  display: inline;
-}
-
-.progress {
-	transform: rotate(-90deg);
-}
-
-.progress__value {
-	stroke-dasharray: 339.292;
-	stroke-dashoffset: 679;
-	animation: progress 2s;
-}
-
-@keyframes progress {
-	from {
-		stroke-dashoffset: 339.292;
-	}
-	to {
-		stroke-dashoffset: 0;
-	}
 }
 
 button div .checkmark {
